@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nog5jub.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <title>Contacto</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top contact-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../contacto/media/img/logo.png" alt="Bootstrap" width="72" height="18">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../quienes-somos-consultas/quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../quienes-somos-consultas/consultas.html">Consultas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../productos-merch/productos.html">Café</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="../productos-merch/merchandising.html">Merch</a>
+              </li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contacto</a>
+            </li>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENEDOR GENERAL -->
+
+    <div class="contact-main-container">
+
+      <!-- TITULO DEL HERO -->
+
+      <div class="container-fluid pt-3 contact-hero">
+        <h1 class="contact-hero__title p-2">
+          Contactanos
+        </h1>
+      </div>
+
+      <!-- FORMULARIO DE CONTACTO -->
+
+      <div class="container-lg form-container d-flex justify-content-between align-items-center">
+        <form name="contact-form" class="row g-3 pt-3 mt-0 contact-form" novalidate>
+
+          <div class="col-12">
+            <label for="inputName" class="form-label contact-form__label fw-bold">Nombre</label>
+            <input type="text" class="form-control rounded-0 px-0" id="inputName" placeholder="Juan Pérez" required>
+            <div class="valid-feedback">
+              Perfecto!
+            </div>
+            <div class="invalid-feedback">
+              Ingrese su nombre por favor.
+            </div>
+          </div>
+  
+          <div class="col-12">
+            <label for="inputEmail" class="form-label contact-form__label fw-bold">Correo electrónico</label>
+            <input type="email" class="form-control rounded-0 px-0" id="inputEmail" placeholder="juan.perez@gmail.com" required>
+            <div class="valid-feedback">
+              Perfecto!
+            </div>
+            <div class="invalid-feedback">
+              Ingrese su correo por favor.
+            </div>
+          </div>
+  
+          <div class="col-12">
+            <label for="inputText" class="form-label contact-form__label fw-bold">Dejanos tus mensaje</label>
+            <textarea type="text" class="form-control rounded-0 border-black" id="inputText" required></textarea>
+            <div class="valid-feedback">
+              Perfecto!
+            </div>
+            <div class="invalid-feedback">
+              Ingrese su mensaje por favor.
+            </div>
+          </div>
+  
+          <div class="col-12">
+            <div class="form-check m-0">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <p>Acepto que la información personal contenida en este formulario será de uso exclusivo de Kafe, en base a los términos señalados en la Política de Privacidad y Términos y condiciones del sitio, y será procesada por la empresa para dar respuesta a mis consultas y/o solicitudes.</p>
+              <label for="terms" class="form-check-label"></label>
+              <div class="valid-feedback">
+                Perfecto!
+              </div>
+              <div class="invalid-feedback">
+                Debe aceptar los Términos y Condiciones por favor.
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-grid gap-2 col-10 mx-auto mt-3 mb-5 contact-btn">
+            <button type="submit" class="btn btn-primary p-4 rounded-pill" >ENVIAR</button>
+          </div>
+  
+        </form>
+
+        <div class="three-kafes"></div>
+      </div>
+
+      <!-- MODAL DE ENVÍO DE DATOS EXITOSO -->
+      <div class="modal fade contact-modal px-4" id="formSentModal" tabindex="-1" aria-labelledby="formSentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="formSentModalLabel">¡Datos enviados!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUCURSALES -->
+
+      <div class="container-sm px-4 contact-geodata mt-3 mb-5">
+        <p class="text-start fs-2 fw-bold">Nuestra sucursal</p>
+        <p class="text-break contact-geodata__subtitle">Estamos ubicados en Callao 740 - Recoleta, Buenos Aires - Argentina</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.150289328519!2d-58.39545185483151!3d-34.600360980796744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabff1d42767%3A0xcbbbf7f7e57deab4!2sAv.%20Callao%20740%2C%20C1023%20CABA!5e0!3m2!1ses-419!2sar!4v1687237607464!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-geodata__map"></iframe>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer>
+        <div class="contenedorFooter1">
+          <img src="./media/img/logoFooter.png" alt="logo kafe">
+          <div class="contenedorRedes">
+            
+              <a href="http://facebook.com" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+            <a href="http://instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="http://twitter.com" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="http://linkedin.com" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contenedorFooter2">
+          <p>Desarrollado por:</p>
+          <div class="row">
+            <div class="col">
+              <p>Laura Rus</p>
+              <p>Laura Espinosa</p>
+              <p>Gisel Arboleya</p>
+            </div>
+            <div class="col">
+              <p>Geraldine Juni</p>
+              <p>Melissa Jacob (p)</p>
+            </div>
+          </div>
+        </div>
+        <div class="contenedorFooter3">
+          <p>Año 2023</p>
+          <p>1° Año - 2° Cuatrimestre</p>
+          <p>Programación y Desarrollo II</p>
+          <p>© Copyright Reserved</p>
+        </div>
+      </footer>
+      
+    </div> 
+
+    <!-- LINKS JAVASCRIPT -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

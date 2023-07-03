@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	box-sizing: border-box;
+	--primario: #3100cd;
+	--fondo1: rgba(238, 204, 228, 0.541);
+	--fondo2: rgba(193, 207, 254, 0.4);
+	--secundario: #ffcef0;
+	--fondo3: #fad7f0;
+}
+
+
+h3.card-text p.class-text {
+	font-family: 'Jost', sans-serif !important;
+}
+
+p{
+	font-family: 'Jost', sans-serif;
+}
+
+.contact-navbar {
+	background-color: #fad7f0;
+}
+
+.contact-navbar .navbar-toggler {
+	border: none;
+}
+
+.contact-navbar .navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.contact-navbar a{
+	font-weight: 600;
+}
+.productos__hero {
+	height: clamp(170px, 40vw, 279px);
+	margin: 56px 0 0 0;
+	color: #fad7f0;
+	background-image: url('background4.jpg') !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.merch {
+	height: clamp(170px, 40vw, 279px);
+	margin: 56px 0 0 0;
+	color: #fad7f0;
+	background-image: url('mockup2.png') !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.display-3 {
+	text-align: left !important;
+	font-weight: bold !important;
+}
+
+.display-4 {
+	text-align: left !important;
+	padding-top: 50px !important;
+	font-weight: bold !important;
+	font-size: 70px !important;
+}
+
+.col-md-9,
+.col-md-3 {
+	padding-top: 30px;
+}
+
+section h2 {
+	font-weight: bold !important;
+}
+
+.btn {
+	margin-bottom: 10px !important;
+	width: 100px !important;
+	align-items: center !important;
+	background-color: #3100cd !important;
+	border: 0 !important;
+	border-radius: 100px !important;
+	box-sizing: border-box !important;
+	color: #ffffff !important;
+	cursor: pointer !important;
+	display: inline-flex !important;
+	font-size: 12px !important;
+	font-weight: regular !important;
+	justify-content: center !important;
+	line-height: 2px !important;
+	max-width: 500px !important;
+	min-height: 30px !important;
+	min-width: 0px !important;
+	overflow: hidden !important;
+	padding: 0px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	text-align: center !important;
+	touch-action: manipulation !important;
+	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+		box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+		color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s !important;
+	user-select: none !important;
+	-webkit-user-select: none !important;
+	vertical-align: middle !important;
+}
+
+button.btn.btn-info.sc-cart-checkout.disabled {
+	background-color: #6e757e !important;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+	background-color: #64646a !important;
+}
+
+.btn-info {
+	background-color: #0bbd08 !important;
+}
+
+.btn-danger {
+	background-color: #d91f11 !important;
+}
+
+.sc-cart-empty-msg {
+	text-align: left !important;
+}
+
+.card.sc-product-item {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel-heading.sc-cart-heading {
+	margin-top: 20px !important;
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+	background-color: var(--fondo3);
+	color: var(--primario);
+	padding: 30px 16px 30px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.col-footer p{
+	font-family: 'Jost', 'sans-serif';
+}
+
+footer i {
+	font-size: 24px;
+}
+
+.contenedorFooter1 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contenedorFooter1 img {
+	width: calc(100% / 3);
+	max-width: 150px;
+}
+
+.contenedorRedes {
+	display: flex;
+	gap: 30px;
+}
+
+.contenedorRedes a {
+	text-decoration: none;
+	color: var(--primario);
+}
+
+.contenedorFooter2 .contenedorFooter3 {
+	font-weight: 500;
+}
+
+.contenedorFooter2 .row {
+	max-width: 400px;
+}
+
+.contenedorFooter2 .col {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contenedorFooter2 > p {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+	footer {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contenedorFooter1 {
+		order: 2;
+		align-items: center;
+	}
+
+	.contenedorFooter1 img {
+		min-width: 150px;
+	}
+
+	.contenedorFooter2 {
+		order: 1;
+	}
+
+	.contenedorFooter3 {
+		order: 3;
+	}
+
+	.contenedorFooter3 p {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	footer {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
