@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home/css/estilos.css">
+    <link rel="shortcut icon" href="home/favicon.png" type="image/x-icon">
+
+    <title>KAFE</title>
+</head>
+<body>
+
+<!-- HEADER -->
+
+    <nav class="navbar navbar-expand-lg fixed-top contact-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="contacto/media/img/logo.png" alt="Bootstrap" width="72" height="18">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos-consultas/quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos-consultas/consultas.html">Consultas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="productos-merch/productos.html">Café</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="productos-merch/merchandising.html">Merch</a>
+              </li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto/index.html">Contacto</a>
+            </li>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- MAIN -->
+    <main>
+
+<!-- SECCION HERO -->
+      <section class="hero">
+        <div class="imgHeroContenedor">
+            <img src="home/img/herohome.jpg" class="img-fluid"  alt="Imagen de cafés">
+        </div>
+        <div class="heroInfoContenedor">
+            <h1>Descubrí el sabor único de KAFE</h1>
+            <p>Probá nuestro café de autor y despertá tus sentidos. ¡Disfrutá de una experiencia inigualable!</p>
+            <a href="./productos-merch/productos.html" class="btn botonHero">¡COMPRALO AHORA!</a>
+        </div>
+      </section>
+
+<!-- SECCION BENEFICIOS -->
+      <section class="beneficios">
+        <h2>Beneficios</h1>
+        <div class="contenedorBeneficios">
+            <div class="cardBeneficio">
+                <img src="home/img/billetera.png" alt="ícono de billetera">
+                <h3><a href="quienes-somos-consultas/quienes-somos.html">Pagalo como quieras</a></h2>
+                <p>
+                    Pagalo con tarjeta de crédito, débito o Mercado Pago.
+                </p>
+            </div>
+            <div class="cardBeneficio">
+                <img src="home/img/carrito.png" alt="ícono de carrito">
+                <h3><a href="quienes-somos-consultas/consultas.html">Lo pedís, lo tenés</a></h2>
+                <p>
+                    Despachamos tu pedido en 24hs, envíos a todo el país.
+                </p>
+            </div>
+            <div class="cardBeneficio">
+                <img src="home/img/tienda.png" alt="ícono de tienda">
+                <h3><a href="contacto/index.html">Descuentos en el local</a></h2>
+                <p>
+                    Vení y pagá con 3 cuotas sin interés y 10% off en efectivo.
+                </p>
+            </div>
+        </div>
+      </section>
+
+<!-- SECCION KAFES -->
+      <section class="kafes">
+        <div class="tituloSeccionContenedor">
+          <h2>Nuestros KAFES</h2>
+        </div>
+        
+        <div id="carouselExampleInterval" class="carousel">
+          <div class="carousel-inner carousel-inner-kafes">
+            <div class="carousel-item carousel-item-kafes active">
+              <div class="card cardKafes">
+                <img src="home/img/cafeSamba.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café Samba</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>5.0</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Un café dulce con un toque de caramelo. Origen Brasil.</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-kafes">
+              <div class="card cardKafes">
+                <img src="home/img/cafeSupremo.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café Supremo</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>4.7</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Un café con un toque de canela y especias. Origen Colombia.</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-kafes">
+              <div class="card cardKafes">
+                <img src="home/img/cafeBourbon.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café Bourbón</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>4.8</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Un café sin cafeína pero con todo el sabor. Origen Brasil.</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-kafes">
+              <div class="card cardKafes">
+                <img src="home/img/cafePuraVida.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café Pura Vida</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Un café fuerte pero con un toque tropical. Origen Costa Rica.</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-kafes">
+              <div class="card cardKafes">
+                <img src="home/img/cafeCatuai.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café Catuaí</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>4.7</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Una mezcla de granos selectos y notas irresistibles. Origen Brasil</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-kafes">
+              <div class="card cardKafes">
+                <img src="home/img/cafeAfrica.png" class="card-img-top" alt="...">
+                <div class="card-body card-body-kafe">
+                  <div class="tituloContenedor">
+                    <h5 class="card-title">Café África</h5>
+                    <div class="puntajeContenedor">
+                      <img src="home/img/estrella.png" alt="icono de valoración">
+                      <p>4.9</p>
+                    </div>
+                  </div>
+                  <p class="card-text">Una mezcla de especias y sabores exóticos. Origen Etiopía</p>
+                  <a href="./productos-merch/productos.html" class="btn">¡Lo quiero!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev control-anterior-kafes" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next control-siguiente-kafes" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+<!-- SECCION CLIENTES -->
+      </section>
+
+      <section class="clientes">
+        <div class="tituloSeccionContenedor">
+          <h2>Nuestros clientes</h2>
+        </div>
+        <div id="carouselExampleInterval2" class="carousel" >
+            <div class="carousel-inner carousel-inner-clientes">
+              <div class="carousel-item carousel-item-clientes active">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente1.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Dai</h5>
+                      <p class="card-text">Amo KAFE!, no puedo vivir sin preparame uno todas las mañana o pasar por el local y comprarme un flat white.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-clientes">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente2.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Rami</h5>
+                      <p class="card-text">KAFE es todo lo que está bien, sentarse en las mesas de la vereda, buena música y excelente café!</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-clientes">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente3.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Vico</h5>
+                      <p class="card-text">Parada obligada, un latte de KAFE, comer algo rico, y todo esta bien!</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-clientes">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente4.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Mati</h5>
+                      <p class="card-text">El tonic cold brew de KAFE es espectacular!!!</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-clientes">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente5.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Andy</h5>
+                      <p class="card-text">KAFE es mi lugar en el mundo, siempre voy con amigos a dusfrutar de las especialidades de la casa.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-clientes">
+                <div class="card card-cliente">
+                    <img src="home/img/cliente6.png" class="card-img-top" alt="...">
+                    <div class="card-body card-body-cliente">
+                      <h5 class="card-title">Gaby</h5>
+                      <p class="card-text">Como fanático del café, siempre busco los mejores granos, los de KAFE son supremos!!!</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev control-anterior-clientes" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next control-siguiente-clientes" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+    </main>
+
+<!-- FOOTER -->
+
+    <footer>
+      <div class="contenedorFooter1">
+        <img src="home/img/logoFooter.png" alt="logo kafe">
+        <div class="contenedorRedes">
+          
+            <a href="http://facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          <a href="http://instagram.com" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="http://twitter.com" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="http://linkedin.com" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contenedorFooter2">
+        <p>Desarrollado por:</p>
+        <div class="row">
+          <div class="col">
+            <p>Laura Rus</p>
+            <p>Laura Espinosa</p>
+            <p>Gisel Arboleya</p>
+          </div>
+          <div class="col">
+            <p>Geraldine Juni</p>
+            <p>Melissa Jacob (p)</p>
+          </div>
+        </div>
+      </div>
+      <div class="contenedorFooter3">
+        <p>Año 2023</p>
+        <p>1° Año - 2° Cuatrimestre</p>
+        <p>Programación y Desarrollo II</p>
+        <p>© Copyright Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="home/js/script.js"></script>
+</body>
+</html>

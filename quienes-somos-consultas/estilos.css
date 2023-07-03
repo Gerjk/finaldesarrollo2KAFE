@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&family=Work+Sans:wght@600;700&display=swap');
+
+* {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	box-sizing: border-box;
+	--primario: #3100cd;
+	--fondo1: rgba(238, 204, 228, 0.541);
+	--fondo2: rgba(193, 207, 254, 0.4);
+	--secundario: #ffcef0;
+	--fondo3: #fad7f0;
+}
+
+p {
+	font-family: "Jost", sans-serif;
+  }
+
+body {
+	min-width: 375px;
+}
+
+.contact-navbar {
+	background-color: #fad7f0;
+}
+
+.contact-navbar .navbar-toggler {
+	border: none;
+}
+
+.contact-navbar .navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.consultas__title.ps-5.pt-5 {
+	margin-left: 50px;
+}
+
+.quienes-somos__title.p-2 {
+	margin-top: 30px;
+	margin-left: 90px;
+}
+
+/* QUIENES SOMOS */
+
+.background1{
+	background-color: rgba(238, 204, 228, 0.53);
+}
+
+.background2{
+	background-color: rgba(193, 207, 254, 0.40);
+}
+
+.quienes-somos__container {
+	height: clamp(170px, 40vw, 279px);
+	margin: 56px 0 0 0;
+	background-image: url('../quienes-somos-consultas/img/nosotros/hero.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.quienes-somos__title {
+	font-weight: bold;
+	color: #fad7f0;
+	font-size: clamp(24px, 7vw, 66px);
+}
+
+.container-quienes-somos{
+	padding: 50px 0 50px 0;
+}
+
+.container-quienes-somos h2{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.container-quienes-somos p{
+	font-size: 24px;
+}
+
+.columna-quienes-somos{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	gap: 30px;
+}
+
+.imagen-quienes-somos{
+	max-height: 450px; 
+	width: 100%; 
+	object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+	.container-quienes-somos h2{
+		font-size: 32px;
+	}
+	
+	.container-quienes-somos p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.container-quienes-somos h2{
+		font-size: 26px;
+	}
+	
+	.container-quienes-somos p{
+		font-size: 14px;
+	}
+
+	.columna-quienes-somos{
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.fila-quienes-somos, .fila-quienes-somos-2{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.fila-quienes-somos-2{
+		flex-direction: column-reverse;
+	}
+
+	.columna-quienes-somos{
+		gap: 5px;
+	}
+
+	.container-quienes-somos{
+		padding: 30px 0 10px 0;
+	}
+}
+
+
+
+
+/* CONSULTAS */
+
+.consultas__container {
+	height: clamp(170px, 40vw, 279px);
+	margin: 56px 0 0 0;
+	background-image: url('./img/hero\ consultas.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.consultas__title {
+	font-weight: bold;
+	color: #fad7f0;
+	font-size: clamp(24px, 7vw, 66px);
+}
+
+
+
+/* ------- */
+
+.publicidad {
+	font-size: 64px;
+	text-align: center;
+	padding: 100px;
+}
+
+.accordion-container {
+	padding: 50px 120px;
+}
+
+@media screen and (max-width: 760px) {
+	.accordion-container {
+		padding: 50px 60px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.accordion-container {
+		padding: 36px 18px;
+	}
+}
+
+.accordion-button {
+	font-family: 'Jost', sans-serif;
+}
+
+.btn-par {
+	background-color: #ffe9f9 !important;
+}
+
+.btn-impar {
+	background-color: hsla(226, 97%, 88%, 0.243) !important;
+}
+
+.accordion-item .accordion-body {
+	font-family: 'Jost', sans-serif;
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+	background-color: var(--fondo3);
+	color: var(--primario);
+	padding: 30px 16px 30px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+  }
+  
+  footer i {
+	font-size: 24px;
+  }
+  
+  .contenedorFooter1 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+  
+  .contenedorFooter1 img {
+	width: calc(100% / 3);
+	max-width: 150px;
+  }
+  
+  .contenedorRedes {
+	display: flex;
+	gap: 30px;
+  }
+  
+  .contenedorRedes a {
+	text-decoration: none;
+	color: var(--primario);
+  }
+  
+  .contenedorFooter2 .contenedorFooter3 {
+	font-weight: 500;
+  }
+  
+  .contenedorFooter2 .row {
+	max-width: 400px;
+  }
+  
+  .contenedorFooter2 .col {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+  }
+  
+  .contenedorFooter2 > p {
+	font-weight: 700;
+	font-size: 20px;
+  }
+  
+
+@media screen and (min-width: 1024px) {
+	footer {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contenedorFooter1 {
+		order: 2;
+		align-items: center;
+	}
+
+	.contenedorFooter1 img {
+		min-width: 150px;
+	}
+
+	.contenedorFooter2 {
+		order: 1;
+	}
+
+	.contenedorFooter3 {
+		order: 3;
+	}
+
+	.contenedorFooter3 p {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	footer {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}

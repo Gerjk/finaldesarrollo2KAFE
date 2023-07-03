@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Consultas</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top contact-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../contacto/media/img/logo.png" alt="Bootstrap" width="72" height="18">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../quienes-somos-consultas/quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./consultas.html">Consultas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../productos-merch/productos.html">Café</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../productos-merch/merchandising.html">Merch</a>
+                </li>
+              </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto/index.html">Contacto</a>
+              </li>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex consultas__container">
+        <h1 class="consultas__title ps-5 pt-5">
+            Consultas
+        </h1>
+    </div>
+
+    <div class="accordion accordion-container" id="accordionExample">
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+
+                <button class="accordion-button rounded btn-par" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1.  ¿Cuál es el horario de atención de KAFE?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Dia y horarios: <br></strong>
+                    Lunes: 6:30 a 19:00hs <br>
+                    Martes: 6:30 a 19:00hs <br>
+                    Miércoles:  6:30 a 19:00hs <br>
+                    Jueves:  6:30 a 19:00hs <br>
+                    Viernes:  6:30 a 19:00hs <br>
+                    Sábados: 9:00 a 12:00hs <br>
+                    Domingos: 9:00 a 12:00hs <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-impar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2.  ¿Aceptan tarjetas de crédito o débito?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Sí, aceptamos tarjetas de crédito y débito como forma de pago. Además, ofrecemos la opción de pago a través de Mercado Pago y Modo.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-par collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" aria-controls="collapseTwo">
+                    3.  ¿Tienen opciones vegetarianas o veganas en su menú?
+                </button>
+            </h2>
+            <div id="collapsetree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Si, contamos con un menú amplio con la utilización de leche de almendras y alimentos veganos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-impar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseTwo">
+                    4.  ¿Tienen opciones sin gluten en su menú?
+                </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Si, contamos con un menú sin gluten y saludables. <br>
+                    Tanto en la infusiones como en postres. <br>
+                    Consulta en nuestro Menú.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-par collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                    5.  ¿Tienen opciones de postres o dulces en su menú?
+                </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Contamos con un amplio menú de postres y productos de panadería.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-impar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseTwo">
+                    6.  ¿Tienen Wi-Fi disponible para los clientes?
+                </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Contamos con Wi-fi en todos nuestros locales.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-par collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseTwo">
+                    7.  ¿Cuál es la especialidad de KAFE?
+                </button>
+            </h2>
+            <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Nuestra especialidad es el café de la casa. <br></strong>
+                            KAFE KAFE. <br>
+                            Ingredientes: Granos de café tostado, canela, chocolate y leche.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-impar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseTwo">
+                    8.  ¿Tienen opciones de bebidas frías además del café?
+                </button>
+            </h2>
+            <div id="collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Contamos con bebidas frias. <br></strong>
+                    -Licuados de estación. <br>
+                    -Limonadas. <br>
+                    -Batidos. 
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-par collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapseTwo">
+                    9.  ¿Tienen opciones de catering para eventos?
+                </button>
+            </h2>
+            <div id="collapsenine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>En estos momentos no realizamos catering.</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item rounded">
+            <h2 class="accordion-header rounded">
+                <button class="accordion-button rounded btn-impar collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseTwo">
+                    10.     ¿Tienen algún programa de fidelidad para clientes frecuentes?
+                </button>
+            </h2>
+            <div id="collapseten" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>KAFE</strong> cuenta con programa de descuento para personas que consumen habitualmente en los locales de KAFE. <br>
+                    Este programa se basa en un sistema de puntos que los clientes acumulan con cada compra y que luego pueden canjear por descuentos en futuras compras.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedorFooter1">
+          <img src="../home/img/logoFooter.png" alt="logo kafe">
+          <div class="contenedorRedes">
+            
+              <a href="http://facebook.com" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+            <a href="http://instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="http://twitter.com" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="http://linkedin.com" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="contenedorFooter2">
+          <p>Desarrollado por:</p>
+          <div class="row">
+            <div class="col">
+              <p>Laura Rus</p>
+              <p>Laura Espinosa</p>
+              <p>Gisel Arboleya</p>
+            </div>
+            <div class="col">
+              <p>Geraldine Juni</p>
+              <p>Melissa Jacob (p)</p>
+            </div>
+          </div>
+        </div>
+        <div class="contenedorFooter3">
+          <p>Año 2023</p>
+          <p>1° Año - 2° Cuatrimestre</p>
+          <p>Programación y Desarrollo II</p>
+          <p>© Copyright Reserved</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+</html>
